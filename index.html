@@ -779,7 +779,7 @@
       <div class='second-main'>
           <div class='second-text'>
               <div class='text'>
-                <h1>Heading Level Two</h1>
+                <h1 class='second-heading'>Heading Level Two</h1>
                 <div>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </div>
@@ -787,6 +787,35 @@
               <div class='image'>
     
               </div>
+          </div>
+      </div>
+
+      <div id='third'>
+          <div id='third-container'>
+              <h1 id='third-heading'>Heading Level Two</h1>
+              <form>
+                  <div id='name'>
+                      <div id='first-name' class='name-container'>
+                          <label class='details'>First Name</label>
+                          <input class='details name-input first' type="text">
+                      </div>
+                      <div id='last-name' class='name-container'>
+                          <label class='details'>Last Name</label>
+                          <input class='details name-input last' type="text">
+                      </div>
+                  </div>
+                  <label class='details'>Email</label>
+                  <input class='details email-message' type="text">
+                  <label class='details'>Message</label>
+                  <textarea class='details email-message comment' type="text" placeholder="Enter your comments, questions and feedback here."></textarea>
+                  <div class='check'>
+                      <div id='box'>
+                          <input type="checkbox">
+                      </div>
+                      <span>By providing your email address, you are agreeing to recieve email communications from Syngenta. We will use your information only in accordance with our <a href='www.google.com'>privacy policy</a></span>
+                  </div>
+                  <button id='button' type='submit' value='Submit'><strong>Submit</strong></button> 
+              </form>
           </div>
       </div>
       <!-- KEEP EDITS ABOVE THIS LINE -->
@@ -962,26 +991,102 @@
               }
 
               .second-text {
-                  margin: auto; 
+                  margin: 70px auto 0 auto; 
                   width: 1300px; 
-                  height: 600px; 
+                  height: 400px; 
                   display: flex; 
                   flex-direction: row;
                   flex-wrap: wrap;
                   justify-content: space-around;
               }
 
+              .second-heading {
+                  font-size: 30px; 
+                  margin-top: 0;
+                  margin-bottom: 30px;
+              }
+
               .text {
                   display: inline;
-                  width: 480px; 
+                  width: 620px; 
                   height: 480px; 
               }
 
               .image {
-                  width: 520px; 
-                  height: 325px; 
+                  width: 600px; 
+                  height: 350px; 
                   background-color: #A8A8A8;
                   display: inline; 
+              }
+
+              #third-container {
+                  width: 1265px; 
+                  height: 800px; 
+                  margin: auto; 
+              }
+
+              #third-heading {
+                  font-size: 30px;
+              }
+
+              .details {
+                  display: block; 
+              }
+
+              .comment {
+                  height: 120px; 
+                  padding: 15px; 
+              }
+
+              .check {
+                  display: flex; 
+                  flex-direction: row;
+              }
+
+              #box {
+                  display: inline; 
+                  margin-right: 20px;
+              }
+
+              #name {
+                  display: flex; 
+                  flex-direction: row;
+                  flex-wrap: wrap; 
+              }
+
+              #button {
+                  margin-top: 20px;
+                  color: white; 
+                  background-color: gray;
+                  padding: 7px 13px 7px 13px; 
+                  border-style: none;
+              }
+
+              .last {
+                  width: 100%; 
+              }
+
+              .first {
+                  width: 96%; 
+              }
+
+              #last-name {
+                  float: right; 
+              }
+
+              #third {
+                  height: 485px; 
+              }
+
+              .name-container {
+                  width: 50%; 
+                  margin-top: 10px; 
+                  margin-bottom: 20px; 
+              }
+
+              .email-message {
+                  width: 100%; 
+                  margin-bottom: 20px;
               }
 
               .page-content {
